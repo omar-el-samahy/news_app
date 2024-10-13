@@ -22,7 +22,7 @@ class CategoryContainer extends StatelessWidget {
           child: Text(
             name,
             style: const TextStyle(
-              fontSize: 25,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
               shadows: [

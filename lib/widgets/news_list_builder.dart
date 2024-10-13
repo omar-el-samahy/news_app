@@ -29,7 +29,9 @@ class _NewsListBuilderState extends State<NewsListBuilder> {
   @override
   Widget build(BuildContext context) {
     return news == null
-        ? CircularProgressIndicator()
+        ? Center(
+            child: CircularProgressIndicator(),
+          )
         : ListView.builder(
             itemBuilder: (context, index) {
               return NewsContainer(

@@ -9,7 +9,7 @@ class News {
   factory News.fromJSON(json) {
     return News(
         title: json["title"],
-        image: json["image"],
+        image: json["urlToImage"],
         description: json["description"],
         url: json["url"]);
   }
