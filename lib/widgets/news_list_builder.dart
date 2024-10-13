@@ -22,14 +22,14 @@ class _NewsListBuilderState extends State<NewsListBuilder> {
 
   getNews() async {
     APIService apiService = APIService();
-    news = await apiService.getNews(category: category[1].name);
+    news = await apiService.getNews(category: "general");
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     return news == null
-        ? const Center(child: CircularProgressIndicator())
+        ? CircularProgressIndicator()
         : ListView.builder(
             itemBuilder: (context, index) {
               return NewsContainer(
