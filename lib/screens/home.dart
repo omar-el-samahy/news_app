@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/categories_list_builder.dart';
-import 'package:news_app/widgets/news_container.dart';
+import 'package:news_app/widgets/news_list_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(children: [
             SizedBox(height: 100, child: CategoriesListBuilder()),
-            NewsContainer()
+            NewsListBuilder()
           ]),
         ),
       ),

@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../models/categories_model.dart';
+import '../models/news.dart';
 
 class NewsContainer extends StatelessWidget {
-  const NewsContainer({
-    super.key,
-    // required this.image,
-    // required this.title,
-    // required this.description
-  });
-  // final String image, title, description;
+  const NewsContainer({super.key, required this.news});
+  final News news;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,12 +18,12 @@ class NewsContainer extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               image: DecorationImage(
-                  image: NetworkImage(category[0].image), fit: BoxFit.fill),
+                  image: NetworkImage(news.image), fit: BoxFit.fill),
             ),
           ),
         ),
         Text(
-          "title",
+          news.title,
           maxLines: 2,
           overflow: TextOverflow.fade,
           style: TextStyle(
@@ -38,7 +33,7 @@ class NewsContainer extends StatelessWidget {
           ),
         ),
         Text(
-          "description",
+          news.description,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(

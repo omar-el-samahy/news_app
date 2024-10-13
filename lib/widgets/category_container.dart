@@ -8,7 +8,6 @@ class CategoryContainer extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(15),
       splashColor: Colors.tealAccent,
-      onTap: () {},
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Container(
