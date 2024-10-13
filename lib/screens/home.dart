@@ -3,7 +3,7 @@ import 'package:news_app/widgets/categories_list_builder.dart';
 import 'package:news_app/widgets/news_list_builder.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

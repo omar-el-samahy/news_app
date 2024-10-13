@@ -26,7 +26,7 @@ class NewsContainer extends StatelessWidget {
           news.title,
           maxLines: 2,
           overflow: TextOverflow.fade,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
             color: Colors.black,
@@ -36,7 +36,7 @@ class NewsContainer extends StatelessWidget {
           news.description,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 15,
             // fontWeight: FontWeight.bold,
             color: Colors.black54,

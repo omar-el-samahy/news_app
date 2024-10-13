@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoryContainer extends StatelessWidget {
-  CategoryContainer({super.key, required this.name, required this.image});
+  const CategoryContainer({super.key, required this.name, required this.image});
   final String name, image;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class CategoryContainer extends StatelessWidget {
           ),
           child: Text(
             name,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.bold,
               color: Colors.white,
