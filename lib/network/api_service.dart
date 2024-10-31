@@ -9,9 +9,11 @@ class APIService {
         "$_baseURL/v2/top-headlines?country=us&category=$category&apiKey=38b1dcd428b241e3862ae0406fd3c1f9");
     Map<String, dynamic> json = response.data;
     List articles = json["articles"];
+    List<News> x = [];
+
     for (var items in articles) {
-      articles.add(News.fromJSON(items));
+      x.add(News.fromJSON(items));
     }
-    return articles;
+    return x;
   }
 }

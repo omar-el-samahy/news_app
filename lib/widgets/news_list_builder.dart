@@ -12,7 +12,7 @@ class NewsListBuilder extends StatefulWidget {
 }
 
 class _NewsListBuilderState extends State<NewsListBuilder> {
-  List<News>? news;
+  List<News>? news=[];
   @override
   void initState() {
     // TODO: implement initState

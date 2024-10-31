@@ -32,7 +32,8 @@ class HomeScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(children: [
             SizedBox(height: 100, child: CategoriesListBuilder()),
-            NewsListBuilder()
+            Container(
+                height: 500 ,child: NewsListBuilder())
           ]),
         ),
       ),

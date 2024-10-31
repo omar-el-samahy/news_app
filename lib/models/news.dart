@@ -1,5 +1,5 @@
 class News {
-  final String title, image, description, url;
+  final String? title, image, description, url;
 
   News(
       {required this.title,
