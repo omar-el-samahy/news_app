@@ -10,12 +10,13 @@ class NewsContainer extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
+          const SizedBox(height: 10),
           Padding(
-            padding: const EdgeInsets.all(7.50),
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
             child: Container(
               alignment: Alignment.center,
-              width: double.infinity,
-              height: 150,
+              width: 400,
+              height: 250,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 image: DecorationImage(
@@ -23,24 +24,30 @@ class NewsContainer extends StatelessWidget {
               ),
             ),
           ),
-          Text(
-           "${news.title}",
-            maxLines: 2,
-            overflow: TextOverflow.fade,
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+            child: Text(
+              "${news.title}",
+              maxLines: 2,
+              overflow: TextOverflow.fade,
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
             ),
           ),
-          Text(
-           "${ news.description}",
-            maxLines: 3,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: 15,
-              // fontWeight: FontWeight.bold,
-              color: Colors.black54,
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+            child: Text(
+              "${news.description}",
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                fontSize: 15,
+                // fontWeight: FontWeight.bold,
+                color: Colors.black54,
+              ),
             ),
           ),
         ],
