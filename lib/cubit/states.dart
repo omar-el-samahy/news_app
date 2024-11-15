@@ -11,7 +11,7 @@ class NewsSuccessState extends NewsStates {
   NewsSuccessState(this.news);
 }
 
-class NewsArticleState extends NewsStates {
+class NewsErrorState extends NewsStates {
   final String errorMessage;
-  NewsArticleState(this.errorMessage);
+  NewsErrorState(this.errorMessage);
 }

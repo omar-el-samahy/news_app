@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/categories_list_builder.dart';
-import 'package:news_app/widgets/news_list_builder.dart';
+import 'package:news_app/widgets/news_list_builder_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,12 +28,11 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Column(children: [
             SizedBox(height: 100, child: CategoriesListBuilder()),
-            Container(
-                height: 500 ,child: NewsListBuilder())
+            SizedBox(height: 500, child: NewsListBuilderCubit())
           ]),
         ),
       ),
